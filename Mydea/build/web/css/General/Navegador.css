@@ -25,9 +25,7 @@ nav {
 .icon i::before {
   font-size: 40px;
 }
-.logo {
-  height: 3rem;
-}
+
 .input_search {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -352,4 +350,29 @@ nav {
 }
 .Inria{
   font-family: var(--Inria_Sans);
+}
+
+.logo{
+    height: 3rem;
+}
+
+@media screen and (max-width:990px) {
+    .logo{
+        display: none;
+    }
+    #btn_negypro{
+        display: none;
+    }
+    #btn_registro{
+        display: none;
+    }
+    #btn_acceder{
+        display: none;
+    }
+    .buscador {
+        flex: 1;
+    
+    .boton {
+        margin-right: 3px;
+    }
 }
