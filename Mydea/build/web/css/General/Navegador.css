@@ -356,23 +356,67 @@ nav {
     height: 3rem;
 }
 
+.logo_mobile{
+    display: none;
+}
+
 @media screen and (max-width:990px) {
     .logo{
         display: none;
     }
+    .contenedor_nav{
+        flex-direction: column;
+    }
     #btn_negypro{
         display: none;
     }
-    #btn_registro{
-        display: none;
-    }
-    #btn_acceder{
-        display: none;
-    }
-    .buscador {
+    .div_buscador{
         flex: 1;
-    
-    .boton {
-        margin-right: 3px;
+        width: 100%;
+        order: 2;
+    }
+    .buscador{
+        flex: 2;
+        margin: 0;
+    }
+    .input_search{
+        width: 100%;
+    }
+    .div_botones{
+        flex: 1;
+        width: 100%;
+        margin-top: 2px;
+        order: 1;
+        justify-content: flex-end;
+    }
+    .button_search i{
+        font-size: 30px
+    }
+    .button_search{
+        width: 15%
+    }
+    nav{
+       min-height: 15vh
+    }
+    .btn_rosa{
+        height: 5vh;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .btn_negro{
+        height: 5vh;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .icon{
+        height: 5vh;
+        padding: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .logo_mobile{
+        display: flex;
+        margin-right: 10vw;
+        height: 6vh;
     }
 }
